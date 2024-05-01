@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mech-tool-deployment"
+version = "0.1.0"
+description = "For deploying agents that use mech tools to inform their participation in prediction markets"
+authors = ["Gnosis"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10.0"
+typer = "^0.9.0"
+mypy = "^1.8.0"
+black = "^23.12.1"
+autoflake = "^2.2.1"
+isort = "^5.13.2"
+prediction-market-agent-tooling = { git = "https://github.com/gnosis/prediction-market-agent-tooling.git", branch = "evan/mech-compat-deps", extras = ["google"] }
+mech = { git = "https://github.com/evangriffiths/mech.git", branch = "evan/0179545-dev-tomte-dep" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
