@@ -12,7 +12,7 @@ mypy = "^1.8.0"
 black = "^23.12.1"
 autoflake = "^2.2.1"
 isort = "^5.13.2"
-prediction-market-agent-tooling = { git = "https://github.com/gnosis/prediction-market-agent-tooling.git", branch = "evan/mech-compat-deps", extras = ["google"] }
+prediction-market-agent-tooling = { version = "^0.22.0", extras = ["google"] }
 mech = { git = "https://github.com/evangriffiths/mech.git", branch = "evan/0179545-dev-tomte-dep" }
 
 [build-system]
