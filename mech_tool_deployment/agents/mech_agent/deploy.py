@@ -1,11 +1,11 @@
 from prediction_market_agent_tooling.benchmark.utils import OutcomePrediction
-from prediction_market_agent_tooling.deploy.agent import DeployableAgent
+from prediction_market_agent_tooling.deploy.agent import DeployableTraderAgent
 from prediction_market_agent_tooling.markets.agent_market import AgentMarket
 
 from mech_tool_deployment.utils import MechResponse, MechTool, mech_request_local
 
 
-class DeployableMechAgentBase(DeployableAgent):
+class DeployableMechAgentBase(DeployableTraderAgent):
     bet_on_n_markets_per_run: int = 5
 
     def load(self) -> None:
