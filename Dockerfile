@@ -27,5 +27,6 @@ COPY --from=builder ${VIRTUAL_ENV} ${VIRTUAL_ENV}
 COPY mech_tool_deployment ./mech_tool_deployment
 
 ENV PYTHONPATH=/app
+ENV PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python
 
 CMD ["bash", "-c", "python mech_tool_deployment/run_agent.py ${runnable_agent_name} ${market_type}"]
